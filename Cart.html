@@ -1,0 +1,758 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping Cart | Rashid Techworld</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Cart CSS -->
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+
+
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+
+    <header class="cart-header">
+
+        <!-- LOGO -->
+
+        <div class="cart-logo">
+
+            <a href="index.html">
+                Rashid <span>Techworld</span>
+            </a>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="cart-nav">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="products.html">
+                Products
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </nav>
+
+
+        <!-- CART ICON -->
+
+        <a href="cart.html"
+           class="cart-icon active">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <span id="cartCount">3</span>
+
+        </a>
+
+    </header>
+
+
+
+    <!-- =========================================
+         CART HERO
+    ========================================== -->
+
+    <section class="cart-hero">
+
+        <div class="cart-hero-content">
+
+            <p>
+                RASHID TECHWORLD
+            </p>
+
+            <h1>
+                Your <span>Shopping Cart</span>
+            </h1>
+
+            <p>
+                Review your selected products before
+                proceeding to checkout.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         CART SECTION
+    ========================================== -->
+
+    <main class="cart-section">
+
+
+        <!-- =====================================
+             CART ITEMS
+        ====================================== -->
+
+        <section class="cart-items-container">
+
+            <div class="cart-section-heading">
+
+                <div>
+
+                    <p>
+                        SHOPPING CART
+                    </p>
+
+                    <h2>
+                        Selected <span>Products</span>
+                    </h2>
+
+                </div>
+
+                <span id="itemCount">
+                    3 Items
+                </span>
+
+            </div>
+
+
+
+            <!-- CART ITEM 1 -->
+
+            <div class="cart-item">
+
+                <!--
+                    REPLACE THE IMAGE PATH BELOW
+                    WITH YOUR ACTUAL PRODUCT IMAGE.
+                -->
+
+                <div class="cart-product-image">
+
+                    <img src="images/laptop1.jpg"
+                         alt="Laptop">
+
+                </div>
+
+
+                <div class="cart-product-details">
+
+                    <h3>
+                        HP Core i5 Laptop
+                    </h3>
+
+                    <p>
+                        8GB RAM | 512GB SSD
+                    </p>
+
+                    <span class="product-code">
+                        Product #RT001
+                    </span>
+
+                </div>
+
+
+                <div class="cart-price">
+
+                    <span>
+                        Price
+                    </span>
+
+                    <strong>
+                        $650
+                    </strong>
+
+                </div>
+
+
+                <!-- QUANTITY -->
+
+                <div class="quantity-control">
+
+                    <button
+                        class="quantity-btn decrease">
+                        −
+                    </button>
+
+                    <input
+                        type="number"
+                        value="1"
+                        min="1"
+                        class="quantity">
+
+                    <button
+                        class="quantity-btn increase">
+                        +
+                    </button>
+
+                </div>
+
+
+                <div class="cart-item-total">
+
+                    <strong>
+                        $650
+                    </strong>
+
+                </div>
+
+
+                <!-- REMOVE -->
+
+                <button
+                    class="remove-item"
+                    title="Remove product">
+
+                    <i class="fa-solid fa-trash"></i>
+
+                </button>
+
+            </div>
+
+
+
+            <!-- CART ITEM 2 -->
+
+            <div class="cart-item">
+
+                <div class="cart-product-image">
+
+                    <img src="images/printer1.jpg"
+                         alt="Printer">
+
+                </div>
+
+
+                <div class="cart-product-details">
+
+                    <h3>
+                        HP Wireless Printer
+                    </h3>
+
+                    <p>
+                        All-in-One | Wi-Fi
+                    </p>
+
+                    <span class="product-code">
+                        Product #RT002
+                    </span>
+
+                </div>
+
+
+                <div class="cart-price">
+
+                    <span>
+                        Price
+                    </span>
+
+                    <strong>
+                        $280
+                    </strong>
+
+                </div>
+
+
+                <div class="quantity-control">
+
+                    <button
+                        class="quantity-btn decrease">
+                        −
+                    </button>
+
+                    <input
+                        type="number"
+                        value="1"
+                        min="1"
+                        class="quantity">
+
+                    <button
+                        class="quantity-btn increase">
+                        +
+                    </button>
+
+                </div>
+
+
+                <div class="cart-item-total">
+
+                    <strong>
+                        $280
+                    </strong>
+
+                </div>
+
+
+                <button
+                    class="remove-item"
+                    title="Remove product">
+
+                    <i class="fa-solid fa-trash"></i>
+
+                </button>
+
+            </div>
+
+
+
+            <!-- CART ITEM 3 -->
+
+            <div class="cart-item">
+
+                <div class="cart-product-image">
+
+                    <img src="images/speaker1.jpg"
+                         alt="Bluetooth Speaker">
+
+                </div>
+
+
+                <div class="cart-product-details">
+
+                    <h3>
+                        Bluetooth Speaker
+                    </h3>
+
+                    <p>
+                        Wireless | Portable
+                    </p>
+
+                    <span class="product-code">
+                        Product #RT003
+                    </span>
+
+                </div>
+
+
+                <div class="cart-price">
+
+                    <span>
+                        Price
+                    </span>
+
+                    <strong>
+                        $120
+                    </strong>
+
+                </div>
+
+
+                <div class="quantity-control">
+
+                    <button
+                        class="quantity-btn decrease">
+                        −
+                    </button>
+
+                    <input
+                        type="number"
+                        value="1"
+                        min="1"
+                        class="quantity">
+
+                    <button
+                        class="quantity-btn increase">
+                        +
+                    </button>
+
+                </div>
+
+
+                <div class="cart-item-total">
+
+                    <strong>
+                        $120
+                    </strong>
+
+                </div>
+
+
+                <button
+                    class="remove-item"
+                    title="Remove product">
+
+                    <i class="fa-solid fa-trash"></i>
+
+                </button>
+
+            </div>
+
+
+
+            <!-- CONTINUE SHOPPING -->
+
+            <div class="continue-shopping">
+
+                <a href="products.html">
+
+                    <i class="fa-solid fa-arrow-left"></i>
+
+                    Continue Shopping
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             ORDER SUMMARY
+        ====================================== -->
+
+        <aside class="order-summary">
+
+            <div class="summary-header">
+
+                <p>
+                    ORDER SUMMARY
+                </p>
+
+                <h2>
+                    Your <span>Total</span>
+                </h2>
+
+            </div>
+
+
+            <!-- SUBTOTAL -->
+
+            <div class="summary-row">
+
+                <span>
+                    Subtotal
+                </span>
+
+                <strong id="subtotal">
+                    $1,050
+                </strong>
+
+            </div>
+
+
+            <!-- DELIVERY -->
+
+            <div class="summary-row">
+
+                <span>
+                    Delivery
+                </span>
+
+                <strong id="delivery">
+                    $20
+                </strong>
+
+            </div>
+
+
+            <!-- DISCOUNT -->
+
+            <div class="summary-row discount">
+
+                <span>
+                    Discount
+                </span>
+
+                <strong>
+                    $0
+                </strong>
+
+            </div>
+
+
+            <div class="summary-divider"></div>
+
+
+            <!-- TOTAL -->
+
+            <div class="summary-total">
+
+                <span>
+                    Total
+                </span>
+
+                <strong id="grandTotal">
+                    $1,070
+                </strong>
+
+            </div>
+
+
+            <!-- PROMO CODE -->
+
+            <div class="promo-code">
+
+                <label for="promo">
+                    Promo Code
+                </label>
+
+                <div>
+
+                    <input
+                        type="text"
+                        id="promo"
+                        placeholder="Enter code">
+
+                    <button id="applyPromo">
+                        Apply
+                    </button>
+
+                </div>
+
+                <small id="promoMessage"></small>
+
+            </div>
+
+
+            <!-- CHECKOUT -->
+
+            <button
+                class="checkout-btn"
+                id="checkoutBtn">
+
+                Proceed to Checkout
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+
+            <!-- PAYMENT -->
+
+            <div class="secure-payment">
+
+                <i class="fa-solid fa-lock"></i>
+
+                Secure checkout & payment
+
+            </div>
+
+
+            <div class="payment-methods">
+
+                <i class="fa-brands fa-cc-visa"></i>
+
+                <i class="fa-brands fa-cc-mastercard"></i>
+
+                <i class="fa-brands fa-cc-paypal"></i>
+
+                <i class="fa-solid fa-credit-card"></i>
+
+            </div>
+
+        </aside>
+
+    </main>
+
+
+
+    <!-- =========================================
+         FEATURES
+    ========================================== -->
+
+    <section class="cart-features">
+
+        <div class="cart-feature">
+
+            <i class="fa-solid fa-truck-fast"></i>
+
+            <div>
+
+                <h3>
+                    Fast Delivery
+                </h3>
+
+                <p>
+                    Reliable delivery to your location.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="cart-feature">
+
+            <i class="fa-solid fa-shield-halved"></i>
+
+            <div>
+
+                <h3>
+                    Secure Shopping
+                </h3>
+
+                <p>
+                    Your information is protected.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="cart-feature">
+
+            <i class="fa-solid fa-headset"></i>
+
+            <div>
+
+                <h3>
+                    Customer Support
+                </h3>
+
+                <p>
+                    We are ready to assist you.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="cart-footer">
+
+        <div class="footer-content">
+
+
+            <div class="footer-brand">
+
+                <h2>
+                    Rashid <span>Techworld</span>
+                </h2>
+
+                <p>
+                    Your trusted destination for quality
+                    technology products and smart solutions.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="products.html">
+                    Products
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Categories
+                </h3>
+
+                <a href="products.html">
+                    Laptops
+                </a>
+
+                <a href="products.html">
+                    Printers
+                </a>
+
+                <a href="products.html">
+                    Kids Tablets
+                </a>
+
+                <a href="products.html">
+                    Speakers
+                </a>
+
+                <a href="products.html">
+                    Accessories
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Contact
+                </h3>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +000 000 000 000
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    info@rashidtechworld.com
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Your Location
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026
+                <strong>Rashid Techworld</strong>.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Cart JavaScript -->
+
+    <script src="cart.js"></script>
+
+</body>
+
+</html>

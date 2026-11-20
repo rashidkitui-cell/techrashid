@@ -1,0 +1,795 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Products | Rashid Techworld</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Products CSS -->
+    <link rel="stylesheet" href="products.css">
+</head>
+
+
+<body>
+
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+
+    <header class="products-header">
+
+        <div class="products-logo">
+            <a href="index.html">
+                Rashid <span>Techworld</span>
+            </a>
+        </div>
+
+
+        <nav class="products-nav">
+
+            <a href="index.html">Home</a>
+
+            <a href="products.html" class="active">
+                Products
+            </a>
+
+            <a href="index.html#about">
+                About
+            </a>
+
+            <a href="index.html#contact">
+                Contact
+            </a>
+
+        </nav>
+
+
+        <a href="#" class="header-cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <span class="cart-count">0</span>
+        </a>
+
+    </header>
+
+
+    <!-- =========================================
+         PRODUCTS HERO
+    ========================================== -->
+
+    <section class="products-hero">
+
+        <div class="products-hero-content">
+
+            <p class="products-label">
+                RASHID TECHWORLD
+            </p>
+
+            <h1>
+                Explore Our <span>Products</span>
+            </h1>
+
+            <p>
+                Discover quality laptops, printers, tablets,
+                speakers and accessories designed for work,
+                learning and entertainment.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         PRODUCT CONTROLS
+    ========================================== -->
+
+    <section class="products-section">
+
+        <div class="products-top">
+
+            <div>
+                <h2>All Products</h2>
+
+                <p>
+                    Browse our complete collection
+                </p>
+            </div>
+
+
+            <!-- SEARCH -->
+
+            <div class="product-search">
+
+                <input
+                    type="text"
+                    id="productSearch"
+                    placeholder="Search products..."
+                >
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================
+             CATEGORY FILTER
+        ====================================== -->
+
+        <div class="category-filter">
+
+            <button class="filter-btn active"
+                    data-category="all">
+                All
+            </button>
+
+            <button class="filter-btn"
+                    data-category="laptops">
+                Laptops
+            </button>
+
+            <button class="filter-btn"
+                    data-category="printers">
+                Printers
+            </button>
+
+            <button class="filter-btn"
+                    data-category="tablets">
+                Kids Tablets
+            </button>
+
+            <button class="filter-btn"
+                    data-category="speakers">
+                Speakers
+            </button>
+
+            <button class="filter-btn"
+                    data-category="accessories">
+                Accessories
+            </button>
+
+        </div>
+
+
+        <!-- =====================================
+             PRODUCTS GRID
+        ====================================== -->
+
+        <div class="all-products-grid"
+             id="productsGrid">
+
+
+            <!-- PRODUCT 1 -->
+
+            <div class="catalog-product"
+                 data-category="laptops">
+
+                <div class="catalog-image">
+
+                    <img src="dragon moster rechargeable.jpg"
+                         alt="dragon moster rechargeable">
+
+                    <span class="catalog-badge">
+                        Featured
+                    </span>
+
+                </div>
+
+                <div class="catalog-info">
+
+                    <h3>dragon moster rechargeable</h3>
+
+                    <p class="catalog-category">
+                        Machine
+                    </p>
+
+                    <div class="catalog-stars">
+                        ★★★★★
+                    </div>
+
+                    <div class="catalog-bottom">
+
+                        <strong>$20</strong>
+
+                        <button class="catalog-cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 2 -->
+
+            <div class="catalog-product"
+                 data-category="laptops">
+
+                <div class="catalog-image">
+
+                    <img src="TP Link-WN7.jpg"
+                         alt="TP Link-WN7">
+
+                </div>
+
+                <div class="catalog-info">
+
+                    <h3>TP Link-WN7</h3>
+
+                    <p class="catalog-category">
+                        TP Link-WN7
+                    </p>
+
+                    <div class="catalog-stars">
+                        ★★★★☆
+                    </div>
+
+                    <div class="catalog-bottom">
+
+                        <strong>$20</strong>
+
+                        <button class="catalog-cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 3 -->
+
+            <div class="catalog-product"
+                 data-category="printers">
+
+                <div class="catalog-image">
+
+                    <img src="transparent wireless mouse and bluetooth.jpg"
+                         alt="transparent wireless mouse and bluetooth">
+
+                </div>
+
+                <div class="catalog-info">
+
+                    <h3>transparent wireless mouse and bluetooth</h3>
+
+                    <p class="catalog-category">
+                        Printer
+                    </p>
+
+                    <div class="catalog-stars">
+                        ★★★★★
+                    </div>
+
+                    <div class="catalog-bottom">
+
+                        <strong>$24</strong>
+
+                        <button class="catalog-cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 4 -->
+
+            <div class="catalog-product"
+                 data-category="printers">
+
+                <div class="catalog-image">
+
+                    <img src="pocket airblaster mini.jpg"
+                         alt="pocket airblaster mini">
+
+                </div>
+
+                <div class="catalog-info">
+
+                    <h3>pocket airblaster mini</h3>
+
+                    <p class="catalog-category">
+                        Printer
+                    </p>
+
+                    <div class="catalog-stars">
+                        ★★★★☆
+                    </div>
+
+                    <div class="catalog-bottom">
+
+                        <strong>$50</strong>
+
+                        <button class="catalog-cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 5 -->
+
+            <div class="catalog-product"
+                 data-category="tablets">
+
+                <div class="catalog-image">
+
+                    <img src="sumsung full bass.jpg"
+                         alt="sumsung full bass">
+
+                    <span class="catalog-badge">
+                        Popular
+                    </span>
+
+                </div>
+
+                <div class="catalog-info">
+
+                    <h3>sumsung full bass</h3>
+
+                    <p class="catalog-category">
+                        Kids Tablet
+                    </p>
+
+                    <div class="catalog-stars">
+                        ★★★★★
+                    </div>
+
+                    <div class="catalog-bottom">
+
+                        <strong>$15</strong>
+
+                        <button class="catalog-cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 6 -->
+
+            <div class="catalog-product"
+                 data-category="tablets">
+
+                <div class="catalog-image">
+
+                    <img src="hp slim elitebook.jpg"
+                         alt="hp slim elitebook">
+
+                </div>
+
+                <div class="catalog-info">
+
+                    <h3>hp slim elitebook</h3>
+
+                    <p class="catalog-category">
+                        Kids Tablet
+                    </p>
+
+                    <div class="catalog-stars">
+                        ★★★★☆
+                    </div>
+
+                    <div class="catalog-bottom">
+
+                        <strong>$189</strong>
+
+                        <button class="catalog-cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 7 -->
+
+            <div class="catalog-product"
+                 data-category="speakers">
+
+                <div class="catalog-image">
+
+                    <img src="hp 65w charger.jpg"
+                         alt="Bluetooth Speaker">
+
+                </div>
+
+                <div class="catalog-info">
+
+                    <h3>hp 65w charger</h3>
+
+                    <p class="catalog-category">
+                        Printer
+                    </p>
+
+                    <div class="catalog-stars">
+                        ★★★★★
+                    </div>
+
+                    <div class="catalog-bottom">
+
+                        <strong>$89</strong>
+
+                        <button class="catalog-cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 8 -->
+
+            <div class="catalog-product"
+                 data-category="speakers">
+
+                <div class="catalog-image">
+
+                    <img src="hp charger.jpg"
+                         alt="hp charger">
+
+                </div>
+
+                <div class="catalog-info">
+
+                    <h3>hp charger</h3>
+
+                    <p class="catalog-category">
+                        Speaker
+                    </p>
+
+                    <div class="catalog-stars">
+                        ★★★★☆
+                    </div>
+
+                    <div class="catalog-bottom">
+
+                        <strong>$30</strong>
+
+                        <button class="catalog-cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 9 -->
+
+            <div class="catalog-product"
+                 data-category="accessories">
+
+                <div class="catalog-image">
+
+                    <img src="logitech M170 wireless mouse.jpg"
+                         alt="logitech M170 wireless mouse">
+
+                </div>
+
+                <div class="catalog-info">
+
+                    <h3>logitech M170 wireless mouse</h3>
+
+                    <p class="catalog-category">
+                        Accessories
+                    </p>
+
+                    <div class="catalog-stars">
+                        ★★★★★
+                    </div>
+
+                    <div class="catalog-bottom">
+
+                        <strong>$15</strong>
+
+                        <button class="catalog-cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 10 -->
+
+            <div class="catalog-product"
+                 data-category="accessories">
+
+                <div class="catalog-image">
+
+                    <img src="Lithium battry wireless.jpg"
+                         alt="Lithium battry wireless">
+
+                </div>
+
+                <div class="catalog-info">
+
+                    <h3>Lithium battry wireless</h3>
+
+                    <p class="catalog-category">
+                        Accessories
+                    </p>
+
+                    <div class="catalog-stars">
+                        ★★★★☆
+                    </div>
+
+                    <div class="catalog-bottom">
+
+                        <strong>$70</strong>
+
+                        <button class="catalog-cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 11 -->
+
+            <div class="catalog-product"
+                 data-category="accessories">
+
+                <div class="catalog-image">
+
+                    <img src="laptop stand with detachable.jpg"
+                         alt="laptop stand with detachable">
+
+                </div>
+
+                <div class="catalog-info">
+
+                    <h3>laptop stand with detachable</h3>
+
+                    <p class="catalog-category">
+                        Accessories
+                    </p>
+
+                    <div class="catalog-stars">
+                        ★★★★★
+                    </div>
+
+                    <div class="catalog-bottom">
+
+                        <strong>$20</strong>
+
+                        <button class="catalog-cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 12 -->
+
+            <div class="catalog-product"
+                 data-category="accessories">
+
+                <div class="catalog-image">
+
+                    <img src="lenove 65w charger.jpg"
+                         alt="lenove 65w charger">
+
+                </div>
+
+                <div class="catalog-info">
+
+                    <h3>lenove 65w charger</h3>
+
+                    <p class="catalog-category">
+                        Accessories
+                    </p>
+
+                    <div class="catalog-stars">
+                        ★★★★☆
+                    </div>
+
+                    <div class="catalog-bottom">
+
+                        <strong>$29</strong>
+
+                        <button class="catalog-cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 13 -->
+
+            <div class="catalog-product"
+                 data-category="accessories">
+
+                <div class="catalog-image">
+
+                    <img src="dell 130w power adapter.jpg"
+                         alt="dell 130w power adapter">
+
+                </div>
+
+                <div class="catalog-info">
+
+                    <h3>dell 130w power adapter</h3>
+
+                    <p class="catalog-category">
+                        Accessories
+                    </p>
+
+                    <div class="catalog-stars">
+                        ★★★★★
+                    </div>
+
+                    <div class="catalog-bottom">
+
+                        <strong>$30</strong>
+
+                        <button class="catalog-cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 14 -->
+
+            <div class="catalog-product"
+                 data-category="accessories">
+
+                <div class="catalog-image">
+
+                    <img src="apple macbook 87w USB-C.jpg"
+                         alt="apple macbook 87w USB-C">
+
+                </div>
+
+                <div class="catalog-info">
+
+                    <h3>apple macbook 87w USB-C</h3>
+
+                    <p class="catalog-category">
+                        Accessories
+                    </p>
+
+                    <div class="catalog-stars">
+                        ★★★★☆
+                    </div>
+
+                    <div class="catalog-bottom">
+
+                        <strong>$20</strong>
+
+                        <button class="catalog-cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 15 -->
+
+            <div class="catalog-product"
+                 data-category="accessories">
+
+                <div class="catalog-image">
+
+                    <img src="backpack 3 in 1 g.jpg"
+                         alt="backpack 3 in 1">
+
+                    <span class="catalog-badge">
+                        New
+                    </span>
+
+                </div>
+
+                <div class="catalog-info">
+
+                    <h3>backpack 3 in 1</h3>
+
+                    <p class="catalog-category">
+                        Accessories
+                    </p>
+
+                    <div class="catalog-stars">
+                        ★★★★★
+                    </div>
+
+                    <div class="catalog-bottom">
+
+                        <strong>$12</strong>
+
+                        <button class="catalog-cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="products-footer">
+
+        <p>
+            © 2026
+            <strong>Rashid Techworld</strong>.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="products.js"></script>
+
+</body>
+
+</html>
